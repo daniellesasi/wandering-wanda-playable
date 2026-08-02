@@ -6399,7 +6399,7 @@ function showEndScreen(win){
   const v = document.getElementById('endVideo');
   const cv = document.getElementById('endCanvas');
   cv.width = 480; cv.height = 854; cv.__on = true;      /* higher res — less pixelated */
-  v.src = (window.WIN_B64 || 'WinLoop.MP4?v=3');                                 /* seamless win loop for BOTH screens */
+  v.src = (window.WIN_B64 || 'WinLoop.MP4?v=5');                                 /* seamless win loop for BOTH screens */
   v.loop = true; v.muted = true; v.playsInline = true;
   v.addEventListener('loadeddata', ()=> chromaKey(v, cv), { once:true });
   v.play().catch(()=>{});
